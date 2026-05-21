@@ -6,6 +6,62 @@ This MVP allows users to connect their wallets, select token balances across cha
 
 ---
 
+## 🚀 Getting Started
+
+### Prerequisites
+
+- **Node.js 20+**
+- npm
+- Browser wallet extensions for the chains you want to test:
+  - Stellar: Freighter or another Stellar-compatible wallet
+  - StarkNet Sepolia: Argent X or Braavos
+  - Ethereum Sepolia: MetaMask or another EVM wallet
+
+Use testnet accounts only. Do not use mainnet funds while testing this MVP.
+
+### Run Locally
+
+```bash
+npm install
+npm run dev
+```
+
+If npm reports a React peer dependency conflict, install with the existing peer dependency set:
+
+```bash
+npm install --legacy-peer-deps
+npm run dev
+```
+
+Open the local development URL shown in your terminal, usually `http://localhost:3000`.
+
+### Testnet Funding
+
+#### Stellar Testnet
+
+1. Create or select a Stellar testnet account in your wallet.
+2. Copy the public account address.
+3. Open [Stellar Laboratory](https://laboratory.stellar.org/) and use Friendbot to fund the account with 10,000 testnet XLM.
+4. Verify the balance in your wallet, in Stellar Laboratory, or with a Stellar testnet explorer.
+
+#### StarkNet Sepolia
+
+1. Switch your StarkNet wallet to Sepolia.
+2. Copy your StarkNet Sepolia account address.
+3. Request testnet STRK or ETH from the [StarkNet Sepolia faucet](https://starknet-faucet.vercel.app/).
+4. Verify the balance in your wallet or on a StarkNet Sepolia explorer.
+
+#### Ethereum Sepolia
+
+1. Switch your EVM wallet to the Ethereum Sepolia network.
+2. Copy your Sepolia account address.
+3. Request Sepolia ETH from [Sepolia Faucet](https://sepoliafaucet.com/) or [QuickNode Sepolia Faucet](https://faucet.quicknode.com/ethereum/sepolia).
+4. Verify the balance in your wallet or on an Ethereum Sepolia explorer.
+
+After funding a test account, connect the matching wallet in the app and refresh balances to confirm the account is ready for local testing.
+
+---
+
 ## 🚀 Features
 
 - 🔗 **Multi-chain support**:  
